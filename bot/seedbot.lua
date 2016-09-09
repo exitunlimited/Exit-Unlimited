@@ -252,75 +252,105 @@ English: @TeleSeedCH
 Persian: @IranSeed
 ]],
     help_text_realm = [[
-Realm Commands:
+SuperGroup Exit UNLIMITED Commands:
 
-!creategroup [name]
-Create a group
-
-!createrealm [name]
-Create a realm
-
-!setname [name]
-Set realm name
-
-!setabout [group_id] [text]
-Set a group's about text
-
-!setrules [grupo_id] [text]
-Set a group's rules
-
-!lock [grupo_id] [setting]
-Lock a group's setting
-
-!unlock [grupo_id] [setting]
-Unock a group's setting
-
-!wholist
-Get a list of members in group/realm
-
+!gpinfo
+🔵 دریافت اطلاعات سوپرگروه 🔴
+!admins
+🔵 دریافت لیست ادمین های سوپرگروه 🔴
+!owner
+🔵 مشاهده آیدی صاحب گروه 🔴
+!modlist
+🔵 مشاهده لیست مدیران 🔴
+!bots
+🔵 مشهاده لیست بات های موجود در سوپرگروه 🔴
 !who
-Get a file of members in group/realm
-
-!type
-Get group type
-
-!kill chat [grupo_id]
-Kick all memebers and delete group
-
-!kill realm [realm_id]
-Kick all members and delete realm
-
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
-
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
-
-!list groups
-Get a list of all groups
-
-!list realms
-Get a list of all realms
-
+🔵 مشاهده لیست کل اعضای سوپرگروه 🔴
+!block
+🔵 اخراج شخص از سوپرگروه 🔴
+!kick
+🔵 اخراج شخص از سوپرگروه 🔴
+!ban
+🔵 مسدود کردن شخص از سوپرگروه 🔴
+!unban
+🔵 خارج کردن شخص از لیست مسدودها 🔴
+!id
+🔵 مشاهده آیدی سوپرگروه یا شخص 🔴
+!id from
+🔵 گرفتن آیدی شخصی که از او فوروارد شده است 🔴
+!kickme
+🔵 اخراج خود از سوپرگروه 🔴
+!setowner
+🔵 یک شخص را به عنوان صاحب گروه انتخاب کردن 🔴
+!promote [username|id]
+🔵 افزودن یک شخص به لیست مدیران 🔴
+!demote [username|id]
+🔵 پاک کردن یک شخص از لیست مدیران 🔴
+!setname
+🔵 عوض کردن اسم گروه 🔴
+!setphoto
+🔵 عوض کردن عکس گروه 🔴
+!setrules
+🔵 قانونگذاری برای گروه 🔴
+!setabout
+🔵 عوض کردن متن درباره ی گروه 🔴
+!save [value] <text>
+🔵 افزودن دستور و پاسخ 🔴
+!get [value]
+🔵 دریافت پاسخ دستور 🔴
+!newlink
+🔵 ساختن لینک جدید 🔴
+!link
+🔵 دریافت لینک گروه 🔴
+!rules
+🔵 دریافت قوانین گروه 🔴
+!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+🔵 قفل کردن تنظیمات 🔴
+!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+🔵 بازکردن قفل تنظیمات گروه 🔴
+!mute [all|audio|gifs|photo|video|service]
+🔵 بیصدا کردن فرمت ها 🔴
+!unmute [all|audio|gifs|photo|video|service]
+🔵 از حالت بیصدا خارج کردن فرمت ها 🔴
+!setflood [value]
+🔵 تنظیم حساسیت اسپم 🔴
+!type [name]
+🔵 تنظیم نوع گروه 🔴
+!settings
+🔵 مشاهده تنظیمات گروه 🔴
+!mutelist
+🔵 لیست افراد بیصدا 🔴
+!silent [username]
+🔵 بیصدا کردن شخص در گروه 🔴
+!silentlist
+🔵 لیست افراد بیصدا 🔴
+!banlist
+🔵 مشاهده لیست مسدود شده ها 🔴
+!clean [rules|about|modlist|silentlist|badwords]
+🔵 پاک کردن [مدیران ,قوانین ,متن گروه,لیست بیصداها, لیست کلمات غیرمجاز] 🔴
+!del
+🔵 پاک کردن پیام با ریپلی 🔴
+!addword [word]
+🔵 افزودن کلمه به لیست کلمات غیرمجاز🔴
+!remword [word]
+🔵 پاک کردن کلمه از لیست کلمات غیرمجاز 🔴
+!badwords
+🔵 مشاهده لیست کلمات غیرمجاز 🔴
+!clean msg [value]
+🔵 پاک کردن تعداد پیام مورد نظر 🔴
+!public [yes|no]
+🔵 همگانی کردن گروه 🔴
+!res [username]
+🔵 به دست آوردن آیدی یک شخص 🔴
 !log
-Get a logfile of current group or realm
-
-!broadcast [text]
-!broadcast Hello !
-Send text to all groups
-» Only sudo users can run this command
-
-!bc [group_id] [text]
-!bc 123456789 Hello !
-This command will send text to [group_id]
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
+🔵 لیست ورود اعضا 🔴
+〰〰〰〰〰〰〰〰
+💥شما میتوانید از / و ! و # استفاده کنید
+💥برای افزودن سازنده ربات به گروه دستور addsudo! رو در گروه بزنید
+💥صاحبان گروه میتوانند از دستورات استفاده کنند
+➖➖➖
+admin : @app_hack_admin
+➖➖➖
 
 ]],
     help_text = [[
