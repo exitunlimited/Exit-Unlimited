@@ -324,111 +324,105 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
+SuperGroup Exit UNLIMITED Commands:
 
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-Return group id or user id
-
-!help
-Get commands list
-
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-
-!set rules [text]
-Set [text] as rules
-
-!set about [text]
-Set [text] as about
-
-!settings
-Returns group settings
-
-!newlink
-Create/revoke your group link
-
-!link
-Returns group link
-
+!gpinfo
+🔵 دریافت اطلاعات سوپرگروه 🔴
+!admins
+🔵 دریافت لیست ادمین های سوپرگروه 🔴
 !owner
-Returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] [text]
-Save [text] as [value]
-
+🔵 مشاهده آیدی صاحب گروه 🔴
+!modlist
+🔵 مشاهده لیست مدیران 🔴
+!bots
+🔵 مشهاده لیست بات های موجود در سوپرگروه 🔴
+!who
+🔵 مشاهده لیست کل اعضای سوپرگروه 🔴
+!block
+🔵 اخراج شخص از سوپرگروه 🔴
+!kick
+🔵 اخراج شخص از سوپرگروه 🔴
+!ban
+🔵 مسدود کردن شخص از سوپرگروه 🔴
+!unban
+🔵 خارج کردن شخص از لیست مسدودها 🔴
+!id
+🔵 مشاهده آیدی سوپرگروه یا شخص 🔴
+!id from
+🔵 گرفتن آیدی شخصی که از او فوروارد شده است 🔴
+!kickme
+🔵 اخراج خود از سوپرگروه 🔴
+!setowner
+🔵 یک شخص را به عنوان صاحب گروه انتخاب کردن 🔴
+!promote [username|id]
+🔵 افزودن یک شخص به لیست مدیران 🔴
+!demote [username|id]
+🔵 پاک کردن یک شخص از لیست مدیران 🔴
+!setname
+🔵 عوض کردن اسم گروه 🔴
+!setphoto
+🔵 عوض کردن عکس گروه 🔴
+!setrules
+🔵 قانونگذاری برای گروه 🔴
+!setabout
+🔵 عوض کردن متن درباره ی گروه 🔴
+!save [value] <text>
+🔵 افزودن دستور و پاسخ 🔴
 !get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-Returns user id
-
-!log
-Will return group logs
-
+🔵 دریافت پاسخ دستور 🔴
+!newlink
+🔵 ساختن لینک جدید 🔴
+!link
+🔵 دریافت لینک گروه 🔴
+!rules
+🔵 دریافت قوانین گروه 🔴
+!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+🔵 قفل کردن تنظیمات 🔴
+!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+🔵 بازکردن قفل تنظیمات گروه 🔴
+!mute [all|audio|gifs|photo|video|service]
+🔵 بیصدا کردن فرمت ها 🔴
+!unmute [all|audio|gifs|photo|video|service]
+🔵 از حالت بیصدا خارج کردن فرمت ها 🔴
+!setflood [value]
+🔵 تنظیم حساسیت اسپم 🔴
+!type [name]
+🔵 تنظیم نوع گروه 🔴
+!settings
+🔵 مشاهده تنظیمات گروه 🔴
+!mutelist
+🔵 لیست افراد بیصدا 🔴
+!silent [username]
+🔵 بیصدا کردن شخص در گروه 🔴
+!silentlist
+🔵 لیست افراد بیصدا 🔴
 !banlist
-Will return group ban list
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
-]]
-  }
+🔵 مشاهده لیست مسدود شده ها 🔴
+!clean [rules|about|modlist|silentlist|badwords]
+🔵 پاک کردن [مدیران ,قوانین ,متن گروه,لیست بیصداها, لیست کلمات غیرمجاز] 🔴
+!del
+🔵 پاک کردن پیام با ریپلی 🔴
+!addword [word]
+🔵 افزودن کلمه به لیست کلمات غیرمجاز🔴
+!remword [word]
+🔵 پاک کردن کلمه از لیست کلمات غیرمجاز 🔴
+!badwords
+🔵 مشاهده لیست کلمات غیرمجاز 🔴
+!clean msg [value]
+🔵 پاک کردن تعداد پیام مورد نظر 🔴
+!public [yes|no]
+🔵 همگانی کردن گروه 🔴
+!res [username]
+🔵 به دست آوردن آیدی یک شخص 🔴
+!log
+🔵 لیست ورود اعضا 🔴
+〰〰〰〰〰〰〰〰
+💥شما میتوانید از / و ! و # استفاده کنید
+💥برای افزودن سازنده ربات به گروه دستور addsudo! رو در گروه بزنید
+💥صاحبان گروه میتوانند از دستورات استفاده کنند
+➖➖➖
+Cahnnel : @app_hack_admin
+➖➖➖
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
 end
